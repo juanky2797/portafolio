@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Typewriter from 'typewriter-effect';
-import ParticleComponent from 'components/ui/ParticleComponent';
+import ParticleComponent from '@/components/ui/particleComponent';
 
 const backgroundImage = '/background.png';  // Your Canva-designed background
 const profilePicture = '/about/juan2.png';  // Updated Profile Picture Path
