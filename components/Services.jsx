@@ -22,7 +22,7 @@ const servicesData = [
   },
   {
     icon: <Gem size={72} strokeWidth={0.8} />,
-    title: 'Neurofeedback - estilo de vida saludable ',
+    title: 'Neurofeedback - estilo de vida saludable',
     description:
       'En la intersección de la ciencia del cerebro y el bienestar: Especialista en Neurofeedback y Promotor de un Estilo de Vida Saludable. Mi enfoque es armonizar la mente y el cuerpo, utilizando la tecnología para potenciar el equilibrio mental.',
   },
@@ -31,26 +31,28 @@ const servicesData = [
 const Services = () => {
   return (
     <section className='mb-12 xl:mb-36'>
-      <div className='container mx-auto'>
+      <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
         <h2 className='section-title mb-12 xl:mb-24 text-center mx-auto'>
           Mis servicios
         </h2>
         {/* grid items */}
-        <div className='grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8'>
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
           {servicesData.map((item, index) => {
             return (
               <Card
-                className='w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative'
+                className='w-full flex flex-col items-center relative pt-20 pb-8 px-4'
                 key={index}
               >
-                <CardHeader className='text-primary absolute -top-[90px]'>
-                  <div className='w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center'>
-                    {item.icon}
-                  </div>
-                </CardHeader>
+                {/* Icon Container */}
+                <div className='absolute -top-10 w-20 h-20 bg-white dark:bg-background flex justify-center items-center rounded-lg shadow-lg'>
+                  {item.icon}
+                </div>
+                {/* Card Content */}
                 <CardContent className='text-center'>
-                  <CardTitle className='mb-4'>{item.title}</CardTitle>
-                  <CardDescription className='text-lg'>
+                  <CardTitle className='mb-4 text-xl lg:text-2xl'>
+                    {item.title}
+                  </CardTitle>
+                  <CardDescription className='text-sm lg:text-base'>
                     {item.description}
                   </CardDescription>
                 </CardContent>

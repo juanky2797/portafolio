@@ -57,6 +57,11 @@ const qualificationData = [
     title: 'Experiencia',
     data: [
       {
+        company: 'Universidad Tecnológica de Panamá',
+        role: 'Docente Universitario',
+        years: '2024 - actualidad',
+      },
+      {
         company: 'Bolsa Latinoamericana de Valores',
         role: 'Analista Ingeniero de Software',
         years: '2021 - 2022',
@@ -203,7 +208,7 @@ const About = () => {
                 <TabsContent value='qualifications'>
                   <div>
                     <h3 className='h3 mb-8 text-center xl:text-left'>
-                      My Asombroso viaje
+                      Mi Asombroso viaje
                     </h3>
                     {/* experience & education wrapper */}
                     <div className='grid md:grid-cols-2 gap-y-8'>

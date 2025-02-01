@@ -10,6 +10,7 @@ import { motion } from 'framer-motion';
 const links = [
   { path: '/', name: 'Inicio' },
   { path: '/contact', name: 'Contacto' },
+  { path: '/links', name: 'Enlaces' },
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {

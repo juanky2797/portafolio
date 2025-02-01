@@ -71,10 +71,16 @@ module.exports = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: 0 },
         },
+        'gradient-flow': {
+          '0%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' },
+          '100%': { 'background-position': '0% 50%' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'gradient-flow': 'gradient-flow 8s ease infinite',
       },
       backgroundImage: {
         hero: 'url(/hero/hero-bg.png)',
@@ -89,6 +95,7 @@ module.exports = {
         work_project_bg_dark: 'url(/work/project-bg-dark.png)',
         contact_illustration_light: 'url(/contact/illustration-light.svg)',
         contact_illustration_dark: 'url(/contact/illustration-dark.svg)',
+        gradient: 'linear-gradient(270deg, #1b1b3a, #3b0764, #1b1b3a)',
       },
     },
   },

@@ -96,3 +96,13 @@
   .swiper-pagination-bullet {
   @apply bg-primary;
 }
+
+/* Add this to your global CSS or inline styles */
+#tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensure it's behind your content */
+}

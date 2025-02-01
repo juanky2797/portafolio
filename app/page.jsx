@@ -8,12 +8,30 @@ import Cta from '@/components/Cta';
 
 export default function Home() {
   return (
-    <main>
+    <main className='space-y-12 md:space-y-20 lg:space-y-24'>
+      {/* Hero Section */}
       <Hero />
-      <About />
-      <Services />
-      <Work />
-      <Cta />
+
+      {/* About Section */}
+      <div className='px-4 sm:px-6 lg:px-8'>
+        <About />
+      </div>
+
+      {/* Services Section */}
+      <div className='px-4 sm:px-6 lg:px-8'>
+        <Services />
+      </div>
+
+      {/* Work Section */}
+      <div className='px-4 sm:px-6 lg:px-8'>
+        <Work />
+      </div>
+
+
+      {/* CTA Section */}
+      <div className='px-4 sm:px-6 lg:px-8'>
+        <Cta />
+      </div>
     </main>
   );
 }
